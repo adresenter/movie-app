@@ -1,0 +1,268 @@
+.infoFilm {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  position: relative;
+  padding: 20px 30px;
+  padding-bottom: 0;
+}
+.filmImg {
+  width: 40%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+}
+.filmInfo {
+  padding: 0 20px;
+  width: 60%;
+}
+.filmInfo h5,
+.filmInfo p {
+  color: black;
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  max-width: 100%;
+  word-wrap: wrap;
+  word-break: break-all;
+}
+.filmInfo h5 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.filmInfo p {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.filmInfo .type {
+  text-transform: uppercase !important;
+  font-size: 20px !important;
+}
+.form {
+  padding: 5px 30px;
+}
+.form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+.form textarea:focus {
+  outline: none;
+}
+.form h4 {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+.price {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.price span {
+  color: black;
+  font-size: 16px;
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+.form h4 {
+  color: #ff2c1f !important;
+}
+.priceInfo {
+  font-size: 20px !important;
+}
+.button {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  margin-bottom: 15px;
+}
+.button button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 24px;
+  background: #ff2c1f;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button button:active {
+  transform: scale(0.95);
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  color: black;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1200px) {
+  .infoFilm {
+    height: 230px;
+    padding: 10px 15px;
+  }
+  .filmInfo {
+    padding: 0 10px;
+  }
+  .filmImg {
+    height: 90%;
+  }
+  .form {
+    padding: 5px 15px;
+  }
+  .filmInfo h5 {
+    font-size: 20px;
+  }
+  .button {
+    margin: 15px 0;
+  }
+  .button button {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  .footer {
+    padding: 0 15px;
+  }
+  .footer p {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .infoFilm {
+    height: 210px;
+    padding: 10px 15px;
+  }
+  .filmInfo {
+    padding: 0 10px;
+  }
+  .filmImg {
+    height: 90%;
+  }
+
+  .filmInfo h5 {
+    font-size: 16px;
+  }
+  .filmInfo p {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  .filmInfo .type {
+    font-size: 16px !important;
+  }
+  .form {
+    padding: 5px 15px;
+  }
+  .price {
+    margin-top: 15px;
+  }
+  .price div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .price span {
+    font-size: 16px;
+  }
+  .priceInfo {
+    font-size: 16px !important;
+  }
+  .button {
+    margin: 15px 0;
+  }
+  .button button {
+    padding: 12px 15px;
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .infoFilm {
+    height: 230px;
+  }
+  .filmImg {
+    height: 100%;
+    width: 25%;
+  }
+  .filmInfo {
+    width: 75%;
+    text-align: center;
+  }
+  .filmInfo h5 {
+    font-size: 20px;
+  }
+  .filmInfo p {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .filmInfo .type {
+    font-size: 20px !important;
+  }
+  .price {
+    margin-top: 10px;
+  }
+  .price span {
+    font-size: 18px;
+  }
+  .form h4 {
+    margin: 10px 0;
+  }
+  .button button {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .infoFilm {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .filmImg {
+    height: 100%;
+    width: 35%;
+  }
+  .form h4 {
+    margin: 15px 0;
+  }
+  .filmInfo {
+    width: 65%;
+    text-align: center;
+  }
+  .footer {
+    margin-top: 10px;
+  }
+  .footer p {
+    font-size: 16px;
+  }
+  .price {
+    margin: 15px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer {
+    margin-top: 0;
+  }
+}

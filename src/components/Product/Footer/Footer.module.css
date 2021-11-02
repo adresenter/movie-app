@@ -1,0 +1,98 @@
+.footer {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-top: 2px solid #ff2c1f;
+  padding: 20px 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.footerContent p {
+  margin: 0;
+}
+.logo {
+  width: 10%;
+}
+.nav {
+  width: 25%;
+  color: white;
+}
+.nav ul {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.nav ul li {
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.title {
+  width: 35%;
+
+  padding: 0 20px;
+}
+.title p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.contact {
+  width: 30%;
+  text-align: center;
+}
+.contact p {
+  font-size: 16px;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  word-wrap: wrap;
+  word-break: break-all;
+}
+@media screen and (max-width: 1200px) {
+  .nav ul li {
+    font-size: 16px;
+  }
+  .title p {
+    font-size: 14px;
+  }
+  .contact p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .logo {
+    width: 30%;
+  }
+  .nav {
+    width: 30%;
+    color: white;
+  }
+  .title {
+    display: none;
+  }
+  .contact {
+    width: 40%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav ul li {
+    font-size: 14px;
+  }
+  .title p {
+    font-size: 14px;
+  }
+  .contact p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+}

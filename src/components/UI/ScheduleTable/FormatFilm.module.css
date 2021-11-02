@@ -1,0 +1,75 @@
+.formatFilm {
+  display: flex;
+  width: 100%;
+}
+.format,
+.notActive {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.format p,
+.notActive p {
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #ff2c1f;
+  width: 80%;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  border-radius: 10px;
+}
+.format {
+  margin: 0;
+}
+.time {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding: 25px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.time button {
+  padding: 4px 4px;
+  font-size: 12px;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  position: absolute;
+  cursor: pointer;
+  animation: hidden 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.time .active {
+  background: #ff2c1f !important;
+  color: white !important;
+}
+.notActive p {
+  background: #1f1f1f;
+}
+@media screen and (max-width: 1200px) {
+  .time button {
+    padding: 4px 2px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .time button {
+    padding: 4px 3px;
+    font-size: 11px;
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

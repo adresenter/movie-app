@@ -1,0 +1,26 @@
+.trailer {
+  position: relative;
+  width: 220px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.trailerImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.playIcon {
+  color: white;
+  font-size: 80px;
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+}
+.underline {
+  position: absolute;
+  border: 1px solid #ff2c1f;
+  width: 100%;
+  height: calc(100% - 2px);
+  top: 0;
+  left: 0;
+}

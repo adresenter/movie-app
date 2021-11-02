@@ -1,0 +1,25 @@
+.date {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.date p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 14px;
+}
+.day {
+  font-size: 28px !important;
+  margin: 5px 0 !important;
+}
+.active p {
+  color: red;
+}
+@media screen and (max-width: 576px) {
+  .date p {
+    font-size: 12px;
+  }
+  .day {
+    font-size: 22px !important;
+  }
+}

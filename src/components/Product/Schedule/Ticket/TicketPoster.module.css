@@ -1,0 +1,37 @@
+.ticketPoster {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.poster {
+  width: 65%;
+  height: 90%;
+  border-radius: 30px;
+  border: 2px solid black;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s all ease;
+}
+.poster::before {
+  content: '';
+  width: 102%;
+  height: 102%;
+  border-radius: 30px;
+  position: absolute;
+  padding: 2px;
+  padding-right: 3px;
+  padding-top: 4px;
+
+  border: 3px dashed #1f1f1f;
+  top: -8px;
+  left: -8px;
+}
+@media screen and (max-width: 850px) {
+  .ticketPoster {
+    display: none;
+  }
+}

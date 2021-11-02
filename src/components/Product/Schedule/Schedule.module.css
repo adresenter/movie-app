@@ -1,0 +1,10 @@
+.schedule h5 {
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Martel', serif;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 8px;
+  border-bottom: 2px solid #ff2c1f;
+}

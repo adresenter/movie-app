@@ -1,0 +1,341 @@
+.profile {
+  background-color: #1f1f1f;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+.profileContent,
+.ticketContainer {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+  padding: 50px 50px;
+}
+.ticketContainer {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.ticketContainer button {
+  border: none;
+  background: #ff2c1f;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.ticketContainer button:active {
+  transform: scale(0.95);
+}
+.ticketId {
+  display: flex;
+  align-items: center;
+}
+.ticketId span {
+  width: 11px;
+  height: 11px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1px;
+  align-items: center;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.ticketId span:active {
+  transform: scale(0.95);
+}
+.ticketId p {
+  padding: 0 10px;
+}
+.ticket {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  background: linear-gradient(
+    159deg,
+    rgba(179, 112, 26, 1) 0%,
+    rgba(231, 197, 88, 1) 25%,
+    rgba(180, 141, 67, 1) 52%,
+    rgba(158, 110, 23, 1) 80%,
+    rgba(97, 72, 26, 1) 100%
+  );
+  display: none;
+  animation: hidden 0.5s;
+  transform-origin: 0% 0%;
+}
+.ticketActive {
+  display: flex;
+  animation: hidden 0.5s;
+}
+.ticket::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50%;
+  top: 41%;
+  left: -3%;
+  box-shadow: 1100px 0px black;
+  z-index: 1;
+}
+.ticket::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 102%;
+  border-left: 15px dotted black;
+  top: 0%;
+  left: -0.7%;
+}
+.ticketContent {
+  width: 70%;
+  height: 100%;
+  /* background: red; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ticketContent::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 102%;
+  border-left: 15px dotted black;
+  top: -1%;
+  right: -1.25%;
+}
+.ticketContent::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 102%;
+  border-left: 15px dotted black;
+  top: 0%;
+  right: 99%;
+}
+.content {
+  width: 85%;
+  height: 90%;
+  border-radius: 30px;
+  border: 2px solid black;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.content::before {
+  content: '';
+  width: 101%;
+  height: 101%;
+  border-radius: 30px;
+  position: absolute;
+  padding: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  border: 3px dashed black;
+  top: -8px;
+  left: -8px;
+}
+.content h5 {
+  margin: 0;
+  height: 25%;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content h4 {
+  height: 25%;
+  font-family: 'Martel', serif;
+  letter-spacing: 3px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.timeContent {
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  height: 49%;
+}
+.time,
+.seat,
+.type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time {
+  width: 30%;
+  border-right: 2px solid black;
+  flex-direction: column;
+}
+.time p {
+  text-transform: capitalize;
+  margin: 10px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.time p:first-child {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.time p:nth-child(2) {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.type {
+  width: 40%;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border-right: 2px solid black;
+}
+.seat {
+  width: 30%;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+@keyframes hidden {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .profileContent,
+  .ticketContainer {
+    width: 1000px;
+  }
+  .ticket {
+    height: 300px;
+  }
+  .ticket::before {
+    width: 55px;
+    height: 55px;
+    box-shadow: 900px 0px black;
+  }
+  .ticket::after {
+    border-left: 12px dotted black;
+  }
+  .ticketContent::after {
+    border-left: 12px dotted black;
+    top: -1%;
+    right: -1.1%;
+  }
+  .ticketContent::before {
+    border-left: 12px dotted black;
+  }
+  .seat p {
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .profileContent,
+  .ticketContainer {
+    width: 850px;
+  }
+  .ticket {
+    height: 250px;
+  }
+  .ticket::before {
+    width: 45px;
+    height: 45px;
+    box-shadow: 745px 0px black;
+  }
+  .ticket::after {
+    border-left: 12px dotted black;
+  }
+  .ticketContent::after {
+    border-left: 12px dotted black;
+    top: -1%;
+    right: -1.5%;
+  }
+  .ticketContent::before {
+    border-left: 12px dotted black;
+  }
+  .time p:first-child {
+    font-size: 16px;
+    margin: 0;
+  }
+  .time p:nth-child(2) {
+    font-size: 24px;
+  }
+  .time p:last-child {
+    font-size: 16px;
+    margin: 0;
+  }
+  .type p {
+    font-size: 28px;
+  }
+  .seat p {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .profileContent,
+  .ticketContainer {
+    width: 550px;
+  }
+  .ticket {
+    height: 200px;
+  }
+  .ticket::before,
+  .ticket::after {
+    display: none;
+  }
+  .ticketContent::before,
+  .ticketContent::after {
+    border-left: 10px dotted black;
+  }
+  .timeContent {
+    padding: 0 5px;
+  }
+  .content h5 {
+    font-size: 20px;
+  }
+  .time p:first-child {
+    font-size: 14px;
+    margin: 0;
+  }
+  .time p:nth-child(2) {
+    font-size: 22px;
+  }
+  .time p:last-child {
+    display: none;
+  }
+  .type p {
+    font-size: 22px;
+  }
+  .seat p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .ticketContent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profileContent,
+  .ticketContainer {
+    width: 350px;
+  }
+}

@@ -1,0 +1,51 @@
+.ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  text-align: center;
+}
+.button button {
+  color: white;
+  background: #111;
+  padding: 6px 16px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: not-allowed;
+}
+.active button {
+  cursor: pointer;
+  background: #ff2c1f;
+}
+@media screen and (max-width: 700px) {
+  .changeStyte {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 95%;
+  }
+  .ticket {
+    padding-top: 5%;
+    width: 65%;
+    align-items: flex-start;
+  }
+  .button {
+    height: 5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ticket {
+    width: 100%;
+  }
+  .changeStyte {
+    height: 90%;
+  }
+  .button {
+    height: 10%;
+  }
+}

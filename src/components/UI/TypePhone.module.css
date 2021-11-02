@@ -1,0 +1,104 @@
+.type,
+.days,
+.times {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  align-items: center;
+  text-transform: capitalize;
+  position: relative;
+  height: 50px;
+}
+.type h5,
+.days h5,
+.times h5 {
+  font-size: 16px;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 500 !important;
+}
+.typeContent,
+.daysContent,
+.timescontent {
+  width: 120px;
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid #ff2c1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.typePhone p {
+  margin: 10px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: none;
+  transition: all 0.3s ease-in;
+  padding: 0px 100%;
+  text-align: center;
+}
+.typePhone span {
+  font-size: 14px;
+  text-transform: capitalize;
+  animation: hidden 1s ease-in;
+}
+.active {
+  overflow: visible;
+  height: 220px;
+  background: black;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  transition: 0.3s all ease-in;
+}
+.active p {
+  display: block;
+  animation: hidden 0.5s ease-in;
+}
+.active span {
+  display: none;
+}
+.daysActive {
+  color: #ff2c1f !important;
+}
+.spanActive {
+  text-transform: uppercase !important;
+  font-size: 18px !important;
+}
+.active p:hover {
+  color: #ff2c1f !important;
+}
+@media screen and (max-width: 400px) {
+  .modalContent {
+    width: 320px;
+    height: 550px;
+  }
+  .type h5,
+  .days h5,
+  .times h5 {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .typeContent,
+  .daysContent,
+  .timescontent {
+    width: 100px;
+  }
+}
+
+@keyframes hidden {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

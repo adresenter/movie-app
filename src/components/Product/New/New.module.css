@@ -1,0 +1,45 @@
+.new {
+  width: 1200px;
+  z-index: 100;
+  position: relative;
+  margin: 0 auto;
+}
+.new h4 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+
+.newContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .new {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .new {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .new {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .new {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .new {
+    width: 300px;
+  }
+}

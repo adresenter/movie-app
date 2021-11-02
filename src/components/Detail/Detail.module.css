@@ -1,0 +1,234 @@
+.detail {
+  width: 100%;
+}
+.filmPoster {
+  width: 100%;
+  height: calc(720px - 120px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  position: relative;
+}
+.filmPoster::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+}
+.filmDetailContainer {
+  background: #1f1f1f;
+  padding-bottom: 30px;
+}
+.filmDetail {
+  display: flex;
+  padding-left: 160px;
+  margin-top: -180px;
+  position: relative;
+}
+.posterContent button {
+  margin: 20px 0;
+  width: 100%;
+  background: #ff2c1f;
+  padding: 5px 0;
+  font-size: 24px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.posterContent button:active {
+  transform: scale(0.98);
+}
+.poster {
+  width: 250px;
+  height: 370px;
+  object-fit: cover;
+}
+.filmName {
+  margin: 0 30px;
+}
+.filmName h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.filmName p {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.detailFooter {
+  width: 100%;
+  height: 400px;
+  background: #1f1f1f;
+}
+.imdb {
+  display: flex;
+  align-items: center;
+}
+.imdbIcon {
+  width: 40px;
+  height: auto;
+}
+.imdb span {
+  margin: 0 10px;
+  letter-spacing: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.type {
+  display: flex;
+}
+.type p {
+  padding: 6px 10px;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.filmContent h5 {
+  font-size: 20px;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.filmContent p {
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.trailers {
+  display: flex;
+}
+.filmDetailRes {
+  display: block;
+}
+.trailer {
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .filmPoster {
+    height: 500px;
+  }
+  .filmDetail {
+    padding-left: 100px;
+  }
+  .filmName h3 {
+    font-size: 28px;
+  }
+  .poster {
+    width: 220px;
+    height: 340px;
+  }
+  .filmContent p {
+    letter-spacing: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .filmPoster {
+    height: 450px;
+  }
+  .filmDetail {
+    margin-top: -160px;
+    padding-left: 50px;
+  }
+  .filmName h3 {
+    font-size: 24px;
+  }
+  .poster {
+    width: 180px;
+    height: 280px;
+  }
+  .filmContent p {
+    letter-spacing: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .filmPoster {
+    height: 550px;
+  }
+  .posterContent {
+    height: 450px;
+  }
+  .filmDetail {
+    padding: 0 30px;
+    margin-top: -200px;
+  }
+  .posterContent {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .posterContent button {
+    width: 300px;
+  }
+  .poster {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    height: 85%;
+  }
+  .filmContent p {
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  .filmName h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .filmPoster {
+    height: 450px;
+  }
+
+  .posterContent button {
+    width: 250px;
+  }
+  .poster {
+    width: 250px;
+    height: auto;
+  }
+  .filmContent p {
+    font-size: 14px;
+  }
+  .filmName h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .filmPoster {
+    height: 350px;
+  }
+  .filmDetail {
+    margin-top: -150px;
+  }
+  .posterContent button {
+    width: 200px;
+  }
+  .poster {
+    width: 200px;
+  }
+  .filmContent p {
+    font-size: 12px;
+  }
+  .filmName h3 {
+    font-size: 22px;
+  }
+  .type {
+    width: 100%;
+  }
+  .type p {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}

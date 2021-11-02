@@ -1,0 +1,28 @@
+.nowShowing {
+  width: 100%;
+  z-index: 100;
+  position: relative;
+  /* margin: 0; */
+}
+.nowShowing h4 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+
+.nowFilmButton {
+  margin-bottom: 30px;
+}
+
+.nowFilmButton .active {
+  background: #ff2c1f;
+}
+.nowFilm .more {
+  text-align: end;
+  margin-right: 30px;
+  color: #ff2c1f;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,134 @@
+.ticketContainer {
+  width: 100%;
+  height: 350px;
+  margin: 0 20px;
+}
+.ticket {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.ticketPoster {
+  width: 15%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.ticketContent {
+  width: 85%;
+  height: 100%;
+  margin-left: 30px;
+}
+.content {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name h4 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.content .imdb {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+.name p {
+  font-size: 14px;
+  display: inline-block;
+  margin: 0;
+  padding: 0px 5px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.name p:nth-child(2) {
+  padding-left: 0;
+  border-right: 2px solid white;
+}
+.ticketDays {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.typeContent {
+  width: 100%;
+  height: 50%;
+  padding: 10px 0;
+}
+@media screen and (max-width: 1200px) {
+  .ticketContainer {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ticketContainer {
+    height: 300px;
+  }
+  .name h4 {
+    font-size: 20px;
+  }
+  .name p {
+    font-size: 12px;
+  }
+  .content .imdb {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ticket {
+    height: 40%;
+    border-bottom: 3px solid white;
+  }
+  .typeContent {
+    height: 60%;
+  }
+  .ticketContainer {
+    height: 100%;
+  }
+
+  .ticketPoster {
+    width: 40%;
+    height: 80%;
+  }
+  .ticketContent {
+    width: 60%;
+    height: 100%;
+  }
+  .ticketContent {
+    margin-left: 15px;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .name {
+    margin-bottom: 10px;
+  }
+  .name p {
+    font-size: 14px;
+    padding: 10px 0;
+    display: block;
+  }
+  .name p:nth-child(2) {
+    border-right: none;
+  }
+  .ticketDays {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ticket {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ticket {
+    height: 40%;
+  }
+}

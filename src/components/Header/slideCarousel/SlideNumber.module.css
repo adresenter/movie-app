@@ -1,0 +1,50 @@
+.number {
+  margin: 0 20px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+.active {
+  color: #ff2c1f;
+  font-size: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .number {
+    font-size: 20px;
+  }
+  .active {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .number {
+    font-size: 16px;
+    margin: 0 20px;
+  }
+  .active {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 520px) {
+  .number {
+    font-size: 16px;
+    margin: 0 20px;
+  }
+  .active {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .number {
+    font-size: 14px;
+    margin: 0 15px;
+  }
+  .active {
+    font-size: 24px;
+  }
+}

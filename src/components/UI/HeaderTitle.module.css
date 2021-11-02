@@ -1,0 +1,23 @@
+.headerTitle {
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  border-bottom: 2px solid red;
+}
+.headerTitle h4::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #ff2c1f;
+  border-radius: 50%;
+  top: -100%;
+  left: 45%;
+}
+.headerTitle p {
+  cursor: pointer;
+  color: #ff2c1f;
+  font-size: 18px;
+  text-transform: capitalize;
+}
